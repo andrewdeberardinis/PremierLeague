@@ -9,7 +9,7 @@ public class CreatingCode
 			addingTeams();
 			display();	
 			addingPoints();	
-				
+			display();	
 				
 			}
 			
@@ -30,11 +30,12 @@ public class CreatingCode
 				public static void display()
 				{
 					
-					for(int i = 0; i <= soccer.size(); i++)
+					for(int i = 0; i < soccer.size(); i++)
 						{
-							System.out.println("_____________________");
+							//System.out.println("_____________________");
 							System.out.print(soccer.get(i).getTeamName() + " ");
 							System.out.println(soccer.get(i).getTeamPoints());	
+							
 						}
 					
 					
@@ -44,11 +45,20 @@ public class CreatingCode
 				{
 					
 					Scanner supa = new Scanner (System.in);
-					int gwpoints = supa.nextInt();
 					
-					for
-					System.out.println("How many points did " + soccer.get(0).getTeamName() + " get this week");
-		
+					
+					for(int i = 0; i < soccer.size(); i++)
+						{
+						System.out.println("How many points did " + soccer.get(i).getTeamName() + " get this week?");	
+						int gwpoints = supa.nextInt();
+						soccer.get(i).setTeamPoints(soccer.get(i).getTeamPoints() + gwpoints);
+						//System.out.println(soccer.get(i).getTeamPoints());
+						
+						}
+						
+					
+					
+					
 					
 					
 				}
