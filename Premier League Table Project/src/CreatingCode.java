@@ -13,8 +13,7 @@ public class CreatingCode
 				
 			}
 			
-			
-			
+
 				public static void addingTeams()
 					{
 						soccer.add(new Teams("Liverpool", 0));
@@ -26,7 +25,6 @@ public class CreatingCode
 				
 					}
 					
-				
 				public static void display()
 				{
 					
