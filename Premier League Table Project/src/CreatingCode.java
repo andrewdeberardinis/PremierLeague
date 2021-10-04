@@ -30,9 +30,9 @@ public class CreatingCode
 					
 					for(int i = 0; i < soccer.size(); i++)
 						{
-							//System.out.println("_____________________");
-							System.out.print(soccer.get(i).getTeamName() + " ");
-							System.out.println(soccer.get(i).getTeamPoints());	
+							//System.out.println("_____________________");	
+							System.out.print(soccer.get(i).getTeamName() + " ");	   
+							System.out.println(soccer.get(i).getTeamPoints());		
 							
 						}
 					
