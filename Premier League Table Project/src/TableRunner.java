@@ -19,6 +19,7 @@ public class TableRunner
 				// Monday going home
 				
 				// received night of oct 4 
+				
 
 			}
 
