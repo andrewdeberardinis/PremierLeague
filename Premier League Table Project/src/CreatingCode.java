@@ -55,24 +55,31 @@ public class CreatingCode
 				public static void addingPoints()
 				{
 					
-					Scanner supa = new Scanner (System.in);
 					Scanner supa2 = new Scanner (System.in);
+					//Scanner supa2 = new Scanner (System.in);
 					
-					System.out.println("What gameweek was last week?");
-					int numberOfGameweeks = supa.nextInt();
+					//System.out.println("What gameweek was last week?");
+					//int numberOfGameweeks = supa.nextInt();
 					
-					for(int whatGameweek = 1; whatGameweek < numberOfGameweeks; whatGameweek++)
+					
+				
+					
+					for(int whatGameweek = 1; whatGameweek < TableRunner.numberOfGameweeks + 1; whatGameweek++)
 						{
-							
+							display();
+							System.out.println();
 							for(int i = 0; i < soccer.size(); i++)
 								{
 									System.out.println("How many points did " + soccer.get(i).getTeamName() + " get in gameweek " + whatGameweek + "?");	
 									int gwpoints = supa2.nextInt();
 									soccer.get(i).setTeamPoints(soccer.get(i).getTeamPoints() + gwpoints);
 									//System.out.println(soccer.get(i).getTeamPoints());
+									
 								}
 						}
 	
+						
+					
 				}
 				
 	}
