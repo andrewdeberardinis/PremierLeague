@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class TableRunner
 	{
@@ -7,19 +8,21 @@ public class TableRunner
 			
 				CreatingCode.addingTeams();
 				
-				for(int i = 0; i <= 3; i ++)
+				Scanner supa = new Scanner (System.in);
+				System.out.println("What gameweek was last week?");
+				int numberOfGameweeks = supa.nextInt();
+				
+				for(int i = 0; i <= numberOfGameweeks; i ++)
 					{
+					
 					CreatingCode.display();	
 					System.out.println();
-					CreatingCode.addingPoints();	
-					
-					//CreatingCode.display();		
+					CreatingCode.addingPoints();			
 					}
 				
-				// Monday going home
-				
-				// received night of oct 4 
-				
+					System.out.println("This is the current table:");
+					CreatingCode.display();
+
 
 			}
 

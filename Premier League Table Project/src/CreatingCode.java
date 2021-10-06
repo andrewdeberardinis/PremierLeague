@@ -6,7 +6,9 @@ public class CreatingCode
 		
 			public static void main(String[] args)
 			{
+			
 			addingTeams();
+			//askingGW();
 			display();	
 			addingPoints();	
 			display();	
@@ -14,7 +16,18 @@ public class CreatingCode
 			}
 			
 
-				public static void addingTeams()
+				
+			
+			public static void askingGW()
+			{
+				Scanner supa = new Scanner (System.in);
+				System.out.println("What gameweek was last week?");
+				int numberOfGameweeks = supa.nextInt();
+			
+			}
+
+			
+			public static void addingTeams()
 					{
 						soccer.add(new Teams("Liverpool", 0));
 						soccer.add(new Teams("Chelsea", 0));
@@ -43,31 +56,23 @@ public class CreatingCode
 				{
 					
 					Scanner supa = new Scanner (System.in);
+					Scanner supa2 = new Scanner (System.in);
 					
+					System.out.println("What gameweek was last week?");
+					int numberOfGameweeks = supa.nextInt();
 					
-					for(int i = 0; i < soccer.size(); i++)
+					for(int whatGameweek = 1; whatGameweek < numberOfGameweeks; whatGameweek++)
 						{
-						System.out.println("How many points did " + soccer.get(i).getTeamName() + " get this week?");	
-						int gwpoints = supa.nextInt();
-						soccer.get(i).setTeamPoints(soccer.get(i).getTeamPoints() + gwpoints);
-						//System.out.println(soccer.get(i).getTeamPoints());
-						
+							
+							for(int i = 0; i < soccer.size(); i++)
+								{
+									System.out.println("How many points did " + soccer.get(i).getTeamName() + " get in gameweek " + whatGameweek + "?");	
+									int gwpoints = supa2.nextInt();
+									soccer.get(i).setTeamPoints(soccer.get(i).getTeamPoints() + gwpoints);
+									//System.out.println(soccer.get(i).getTeamPoints());
+								}
 						}
-						
-					
-					
-					
-					
-					
+	
 				}
 				
-				
-				
-				
-				
-				
-				
-
-			
-
 	}
